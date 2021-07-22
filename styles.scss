@@ -1,0 +1,18 @@
+$background-color:#100F02;
+$font-family:marine, sans-serif;
+$font-weight-regular:400;
+$font-weight-bold:700;
+$font-color:#ECE9D3;
+$input-font-color:#707070;
+$cta-color:#F0DE40;
+$label-font-color:#F1F0E9;
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:$background-color;
+}
