@@ -1,18 +1,63 @@
-$background-color:#100F02;
-$font-family:marine, sans-serif;
-$font-weight-regular:400;
-$font-weight-bold:700;
-$font-color:#ECE9D3;
-$input-font-color:#707070;
-$cta-color:#F0DE40;
-$label-font-color:#F1F0E9;
-
 *{
-    box-sizing:border-box;
+    box-sizing: border-box;
     margin:0;
     padding:0;
 }
 
+$font-family:marine, sans-serif;
+
+
 body{
-    background-color:$background-color;
+    font-family: $font-family;
+    display:grid;
+    place-items: center;
+}
+
+.main-container{
+    display:grid;
+    //place-items: center;
+    width:80%;
+    border:5px solid black;
+    margin:30px 50px;
+    padding:30px 20px;
+
+}
+
+.top-container{
+    display:flex;
+    justify-content:space-between;
+    border:5px solid black;
+    margin-bottom:100px;
+    padding:30px;
+}
+.logo-container{
+
+}
+
+.search-container{
+
+}
+
+.country-container{
+    display:grid;
+    justify-content: center;
+    padding:30px;
+ 
+}
+
+.output-container{
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+    .output1{
+        
+
+    }
+    .output2{
+
+    }
+    .output3{
+
+    }
 }
