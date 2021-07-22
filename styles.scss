@@ -1,3 +1,5 @@
+@import "mixins";
+
 *{
     box-sizing: border-box;
     margin:0;
@@ -19,15 +21,31 @@ body{
     place-items: center;
     background-color: $background-color;
     color:$font-color;
+    @include mq(600px){
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;
+    }
 }
 
 .main-container{
     display:grid;
+    //grid-template-columns: repeat(2,1fr);
     //place-items: center;
     width:80%;
-   // border:5px solid black;
+    //border:5px solid white;
     margin:30px 50px;
     padding:30px 20px;
+    @include mq(600px){
+        //display:flex;
+       // flex-direction: column;
+       width:100%;
+       margin:10px;
+       padding:10px;
+       text-align: center;
+       //border:1px solid white;
+    }
 
 }
 
@@ -37,6 +55,13 @@ body{
    // border:5px solid black;
     margin-bottom:30px;
     padding:30px;
+
+    @include mq(600px){
+        display: inline-block;
+        margin-top:10px;
+        padding-top:0px;
+        margin-bottom: -20px;
+    }
 }
 .logo-container{
     $font-weight:$regular-weight;
@@ -44,10 +69,29 @@ body{
     font-style:normal;
     color:$lighten-color;
     //color:lighten($font-color, 30%);
-
+    @include mq(800px){
+        font-size:20px;
+        padding-bottom:10px;
+        text-align: left;
+        
+    }
 }
 
 .search-container{
+    @include mq(600px){
+        display:inline-block;
+        input{
+            width:80%;
+            //font-size:0px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    @include mq(300px){
+        input{
+            width: 70%;
+        }
+    }
     .search{
         padding:10px;
         margin-right:0px;
@@ -83,12 +127,28 @@ body{
     padding:30px;
     font-size: 2.5em;
  
+    @include mq(600px){
+        font-size: 2em;
+        display: inline-block;
+        
+        text-align: center;
+    }
 }
 
 .output-container{
     display:flex;
     justify-content: space-evenly;
     text-align: center;
+    @include mq(600px){
+        display: inline-block;
+        width:100%;
+
+        p{
+            font-size:1.5em;
+            padding-top:5px;
+            margin-bottom:30px;
+        }
+    }
 
     p{
         font-size:2.5em;

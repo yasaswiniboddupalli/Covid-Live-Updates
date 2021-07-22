@@ -14,12 +14,35 @@ body {
   color: #ECE9D3;
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
 .main-container {
   display: -ms-grid;
   display: grid;
   width: 80%;
   margin: 30px 50px;
   padding: 30px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+  }
 }
 
 .top-container {
@@ -33,10 +56,44 @@ body {
   padding: 30px;
 }
 
+@media screen and (max-width: 600px) {
+  .top-container {
+    display: inline-block;
+    margin-top: 10px;
+    padding-top: 0px;
+    margin-bottom: -20px;
+  }
+}
+
 .logo-container {
   font-size: 30px;
   font-style: normal;
   color: #F1F0E9;
+}
+
+@media screen and (max-width: 800px) {
+  .logo-container {
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-container {
+    display: inline-block;
+  }
+  .search-container input {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .search-container input {
+    width: 70%;
+  }
 }
 
 .search-container .search {
@@ -77,6 +134,14 @@ body {
   font-size: 2.5em;
 }
 
+@media screen and (max-width: 600px) {
+  .country-container {
+    font-size: 2em;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
 .output-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,6 +150,18 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .output-container {
+    display: inline-block;
+    width: 100%;
+  }
+  .output-container p {
+    font-size: 1.5em;
+    padding-top: 5px;
+    margin-bottom: 30px;
+  }
 }
 
 .output-container p {
