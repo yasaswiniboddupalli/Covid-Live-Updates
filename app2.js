@@ -18,6 +18,7 @@ const res=search_btn.addEventListener('click',e=>{
         feedback.textContent='';
         //console.log(country_name.toLowerCase());
         name.textContent=country_name;
+        //let country_list=[]
 
         //fetching API
         const url="https://api.covid19api.com/summary";
@@ -34,12 +35,9 @@ const res=search_btn.addEventListener('click',e=>{
                     deaths.textContent=countries[i].TotalDeaths;
                     recovery.textContent=countries[i].TotalRecovered;
                 }
-                /*else{
-                    total_cases.textContent='Not listed';
-                    deaths.textContent='Not listed';
-                    recovery.textContent='Not listed';
-                }*/
+               // country_list+=countries[i].Country + "1";
         }
+        //document.write(country_list.split('1'));
         })
     
     }else{

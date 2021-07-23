@@ -13,7 +13,8 @@ $regular-font-size:18px;
 $search-box-color:#FFFFFF;
 $font-color:#ECE9D3;
 $background-color:#100F02;
-$lighten-color:#F1F0E9;
+//$lighten-color:#F1F0E9;
+$lighten-color:rgba(236,233,211,0.6);
 
 body{
     font-family: $font-family;
@@ -68,7 +69,7 @@ body{
     font-size: 30px;
     font-style:normal;
     color:$lighten-color;
-    //color:lighten($font-color, 30%);
+    //color:lightness($$lighten-color;, 5);
     @include mq(800px){
         font-size:20px;
         padding-bottom:10px;
@@ -114,8 +115,12 @@ body{
         border:none;
         border-radius:0px 5px 5px 0px;
     }
-    .search-btn:focus{
-        border:5px solid $cta-color;
+   // .search-btn:focus{
+    //    border:5px solid $cta-color;
+    //}
+    li{
+        color:$lighten-color;
+        font-size: $regular-font-size;
     }
 }
 

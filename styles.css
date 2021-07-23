@@ -68,7 +68,7 @@ body {
 .logo-container {
   font-size: 30px;
   font-style: normal;
-  color: #F1F0E9;
+  color: rgba(236, 233, 211, 0.6);
 }
 
 @media screen and (max-width: 800px) {
@@ -120,8 +120,9 @@ body {
   border-radius: 0px 5px 5px 0px;
 }
 
-.search-container .search-btn:focus {
-  border: 5px solid #F0DE40;
+.search-container li {
+  color: rgba(236, 233, 211, 0.6);
+  font-size: 18px;
 }
 
 .country-container {
@@ -170,6 +171,6 @@ body {
 }
 
 .output-container label {
-  color: #F1F0E9;
+  color: rgba(236, 233, 211, 0.6);
 }
 /*# sourceMappingURL=styles.css.map */

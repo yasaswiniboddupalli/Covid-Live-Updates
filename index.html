@@ -18,13 +18,17 @@
        </div>
 
        <!--search input-->
-
+       
        <div class="search-container">
-        <div class="search-box">
-            <input type="text" class="search" placeholder="Country...">
-             <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
-        </div>
-       </div>
+        <form id="myform">
+            <div class="search-box">
+                <input type="text" class="search" placeholder="Country...">
+                 <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                 <ul></ul>
+            </div>
+            <div class="feedback"></div>
+           </div>
+        </form>
        </div>
         <!--country main-->
         <div class="country-container">
@@ -41,17 +45,19 @@
             <!--death-->
             <div class="output1">
                 <label>Total Death cases</label>
-                <p class="cases">8900</p>
+                <p class="death">8900</p>
             </div>
             <!--recovered-->
             <div class="output1">
                 <label>Total Recovered cases</label>
-                <p class="cases">10890</p>
+                <p class="recovery">10890</p>
             </div>
         </div>
     </div>
    
     </div>
+<script src="countries.js"></script>
+<script src="app2.js"></script>
 
 </body>
 </html>
