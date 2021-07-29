@@ -122,6 +122,7 @@ body {
 
 .search-container li {
   color: rgba(236, 233, 211, 0.6);
+  text-decoration: none;
   font-size: 18px;
 }
 

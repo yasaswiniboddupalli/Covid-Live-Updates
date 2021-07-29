@@ -7,7 +7,7 @@ document.querySelector('.search').addEventListener('input',e=>{
     //console.log(e.target.value);
     if(e.target.value){
         country_arr=countries_list.filter(country=>country.toLowerCase().includes(e.target.value));
-        country_arr=country_arr.map(country=>`<li>${country}</li>`);
+        country_arr=country_arr.map(country=>`<p">${country}</p>`);
     }
     showCountryArray(country_arr);
   // console.log(country_arr);

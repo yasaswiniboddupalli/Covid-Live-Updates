@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <h1>Ferchc Api</h1>
+    <form id="myform">
+    <input type="text" id="country" placeholder="country name">
+    <input type="submit" value="get data">
+</form>
+</body>
+<script>
+    const myForm=document.getElementById('myform');
+    const country=document.getElementById('country').value;
+    myForm.addEventListener('submit',e=>{
+        e.preventDefault();
+        alert(country);
+
+        let url='https://api.covid19api.com/total/dayone/country/'+country;
+        fetch(url)
+        .then((res)=>res.json())
+        .then((res)=>console.log(res))
+    });
+    
+</script>
+</html>
